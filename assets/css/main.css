@@ -37,10 +37,6 @@ img{
     font-size: 1.4rem;
 }
 
-*{
-    display: hidden;
-}
-
 .article-aire p,
 .article-heladera p{
     color: var(--yellow-font);
