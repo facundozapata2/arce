@@ -5,6 +5,7 @@
     --white: #ffffff;
     --yellow-font: rgb(255, 248, 107);
     --yellow-bg: #ff8f06;
+    --ligth-yellow: #ffa90b;
 }
 
 .wrapper{
@@ -54,38 +55,46 @@ img{
 }
 
 .whatsapp-fixed svg{
-    position: absolute;
+    position: fixed;
     right: 1.25rem;
     bottom: 1.25rem;
+    z-index: 1000;
 }
 
 .fixed-section{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    gap: 1rem;
     font-size: 1.4rem;
     color: var(--white);
 }
 
-
-.background-image{
-    top: 0;
-    position: sticky;
+.background-image img{
     width: 100%;
-    height: 100%;
-    padding: 2rem 0;
-    background-image: url('/assets/img/webp/img0.jpg');
-    background-position: center;
-    background-size: cover;
-
 }
+
+/* .background-image{
+    position: relative;
+} */
+
+
 
 .section-content{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
     gap: 1rem;
 }
 
 .fixed-section a{
+    border: 1px solid #cfcc77;
     background: #2ecc71;
     width: fit-content;
     padding: .5rem;
@@ -97,4 +106,102 @@ img{
     gap: .5rem;
     color: var(--white);
     font-size: 2rem;
+    transition: all .3s ease-in-out;
 }
+.consultenos:hover,
+.consultenos:active,
+.consultenos:focus{
+    transform: scale(1.05);
+    background: #5fcc71;
+}
+
+.hero{
+    padding: .5rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background: var(--ligth-yellow);
+}
+
+.hero h3{
+    font-size: 2.4rem;
+    color: var(--white);
+}
+
+.hero p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero span{
+    font-size: 2rem;
+    padding: .5rem 0;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--yellow-bg);
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.info ul{
+    background:#cfcc77;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.info li{
+    margin: 0 .5rem;
+}
+
+.brands img{
+    width: 100%;
+}
+
+.why-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--Amber-500);
+
+}
+
+.why-us span{
+    text-align: center;
+    color: var(--yellow-bg);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.why-us-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    gap: .5rem;
+}
+
+.payment-methods{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin: .5rem;
+}
+
+.bottom-cta{
+    background: var(--yellow-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+    color: var(--white);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
