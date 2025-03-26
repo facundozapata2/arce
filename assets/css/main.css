@@ -205,3 +205,12 @@ img{
     font-weight: 600;
 }
 
+.main-footer{
+    text-align: center;
+    font-size: 1.4rem;
+    background: var(--ligth-yellow);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+}
