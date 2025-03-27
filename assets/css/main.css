@@ -32,6 +32,7 @@ img{
     padding: 1rem;
     text-align: center;
 }
+
 .article-aire span,
 .article-heladera span{
     color: var(--white);
@@ -76,12 +77,6 @@ img{
     width: 100%;
 }
 
-/* .background-image{
-    position: relative;
-} */
-
-
-
 .section-content{
     display: flex;
     flex-direction: column;
@@ -108,6 +103,7 @@ img{
     font-size: 2rem;
     transition: all .3s ease-in-out;
 }
+
 .consultenos:hover,
 .consultenos:active,
 .consultenos:focus{
@@ -193,6 +189,17 @@ img{
     margin: .5rem;
 }
 
+.payment-methods svg{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.payment-methods svg:active,
+.payment-methods svg:hover,
+.payment-methods svg:focus{
+    transform: scale(1.05);
+}
+
 .bottom-cta{
     background: var(--yellow-bg);
     display: flex;
@@ -214,3 +221,14 @@ img{
     gap: .5rem;
     padding: .5rem;
 }
+
+/* desktop */
+
+@media screen and (min-width: 786px){
+    .full-vw-img{
+        aspect-ratio: 19/9;
+        object-fit: contain;
+        width: fit-content;
+    }
+}
+
